@@ -1,0 +1,29 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<h3>Oscillators and Frequency</h3>
+
+<div class="buttons">
+  <button class="note" playing = 'false'>Play</button>
+</div>
+
+<form action="#n" name="theForm">
+    <label for="osc-types">Osc types: </label>
+    <input type="radio" id="radio1" name="osc-type" value="sine" checked="checked" >
+    <label for="radio1">Sine</label>
+	<input type="radio" id="radio2" name="osc-type" value="sawtooth">
+	<label for="radio2">Sawtooth</label>
+	<input type="radio" id="radio3" name="osc-type" value="triangle">
+	<label for="radio3">Triangle</label>
+	<input type="radio" id="radio4" name="osc-type" value="square">
+	<label for="radio4">Square</label>
+</form>
+
+<p>
+	Frequency: <span id="frequency">n/a</span>
+</p>
+
+<p>
+	Volume: <span id="volume">n/a</span>
+</p>
+
+<script language="JavaScript" type="text/javascript" src="app.js"></script>

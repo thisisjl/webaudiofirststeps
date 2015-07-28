@@ -1,0 +1,75 @@
+/*based on: https://github.com/kylestetz/Web-Audio-Basics*/
+
+body, html
+{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Andale Mono', monospace;
+  font-size: 18px;
+  text-align: center;
+}
+
+h3
+{
+  display: inline-block;
+  margin: 0;
+  padding: 1em;
+
+  background-color: white;
+  -webkit-user-select: none;
+}
+
+button
+{
+  margin: 0 0.25em;
+  margin-bottom: 32px;
+  padding: 0.5em 1em;
+
+  font-family: 'Andale Mono', monospace;
+  font-size: 32px;
+
+  background-color: white;
+  border: 3px solid black;
+
+}
+
+p
+{
+  margin: 0;
+  padding: 1em;
+  -webkit-user-select: none;
+
+}
+
+/* Hide radio button (the round disc)
+  we will use just the label to create pushbutton effect*/
+input[type=radio] {
+    display:none; 
+    margin: 0 0.25em;
+    margin-bottom: 32px;
+}
+ 
+/*  Change the look'n'feel of labels (which are adjacent to radiobuttons).
+  Add some margin, padding to label*/
+
+input[type=radio] + label {
+
+    margin: 0 0.25em;
+    margin-bottom: 32px;
+    padding: 0.5em 1em;
+
+    font-family: 'Andale Mono', monospace;
+    font-size: 32px;
+
+    background-color: white;
+    border: 3px solid black;
+}
+
+/* Change background color for label next to checked radio button
+ to make it look like highlighted button*/
+input[type=radio]:checked + label { 
+   background-image: none;
+    background-color:#d0d0d0;
+}
